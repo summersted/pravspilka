@@ -1,0 +1,38 @@
+@import "./mixins/mixins.scss";
+
+#container{
+    margin-left: 15%;
+    width: 70%;
+}
+
+.tittle{
+    @include tittleBlock;
+}
+
+.flex{
+    display: flex;
+    text-align: left;
+}
+
+.col1 {
+    max-width: 50%;
+}
+.col2 {
+    max-width: 50%;
+}
+
+ul{
+    @include list;
+}
+
+.markersPurple{
+    @include marker(#b59aff);
+}
+.markersBlue{
+    @include marker(#9aa9ff);
+}
+
+#footer{
+    font-size: 20px;
+    margin-top: 100px;
+}

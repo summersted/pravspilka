@@ -1,0 +1,51 @@
+#container {
+  margin-left: 15%;
+  width: 70%;
+}
+
+.tittle {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.col1 {
+  max-width: 50%;
+}
+
+.col2 {
+  max-width: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 20px;
+  padding-left: 6px;
+}
+
+.markersPurple {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#b59aff), to(#fefcea00));
+  background: linear-gradient(to right, #b59aff, #fefcea00);
+}
+
+.markersBlue {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#9aa9ff), to(#fefcea00));
+  background: linear-gradient(to right, #9aa9ff, #fefcea00);
+}
+
+#footer {
+  font-size: 20px;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=consult.module.css.map */

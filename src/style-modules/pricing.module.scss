@@ -1,0 +1,27 @@
+@import "./mixins/mixins.scss";
+
+.tittle{
+    @include tittleBlock;
+}
+
+#container{
+    margin-left: 25%;
+    width: 50%;
+}
+li{
+    list-style-type: none;
+    width: 100%;
+    margin-left: 0;
+}
+.left{
+    text-align: left;
+}
+.markersPurple{
+    display: flex;
+    @include marker(#b59aff);
+}
+.markersBlue{
+    display: flex;
+    @include marker(#9aa9ff);
+}
+
