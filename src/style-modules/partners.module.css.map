@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAA;EACN,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,GAAG;CACb;;AAED,AAAA,OAAO,CAAA;ECNH,UAAU,EAAE,KAAK;EACjB,aAAa,EAAE,KAAK;CDOvB;;AAED,MAAM,EAAC,SAAS,EAAE,KAAK;EACnB,AAAA,OAAO,CAAA;IACH,UAAU,EAAE,IAAM;IAClB,aAAa,EAAE,IAAM;GAExB",
+    "sources": [
+        "partners.module.scss",
+        "mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "partners.module.css"
+}

@@ -3,28 +3,53 @@
   width: 60%;
 }
 
-.tittle {
-  margin-top: 100px;
-  margin-bottom: 100px;
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[autofill];
+      grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+      grid-template-areas: "tittle" "photo" "textBlock";
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#tittle {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tittle;
 }
 
-.col1 {
-  max-width: 60%;
+#textBlock {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: textBlock;
 }
 
-.col2 {
-  margin-left: 10%;
+#photo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: photo;
+  margin-bottom: 50px;
 }
 
 #rectangle {
-  width: 150px;
-  height: 200px;
-  background-color: #4747fc;
+  height: 300px;
+  width: auto;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 10px -2px black;
+          box-shadow: 5px 5px 10px -2px black;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[autofill];
+        grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+        grid-template-areas: "tittle tittle" "textBlock photo";
+  }
+  #photo {
+    padding-left: 50px;
+  }
 }
 /*# sourceMappingURL=main.module.css.map */

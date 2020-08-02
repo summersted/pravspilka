@@ -9,22 +9,26 @@
     @include tittleBlock;
 }
 
-.flex{
+.colBlock{
     display: flex;
     text-align: left;
 }
-
-.col1 {
-    max-width: 50%;
+.col{
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
-.col2 {
-    max-width: 50%;
+.col:nth-child(1){
+    margin-left: 10px;
 }
-
-ul{
-    @include list;
+.col:nth-child(2){
+    margin-left: 20px;
 }
-
+.col:nth-child(3){
+    margin-left: 30px;
+}
+.col:nth-child(4){
+    margin-left: 40px;
+}
 .markersPurple{
     @include marker(#b59aff);
 }
@@ -35,4 +39,23 @@ ul{
 #footer{
     font-size: 20px;
     margin-top: 100px;
+}
+
+@media (max-width: 600px){
+    #container{
+        margin-left: 0+8%;
+    }
+    .tittle{
+        margin-top: 0+50px;
+        margin-bottom: 0+50px;
+        text-align: left;
+    }
+    .colBlock{
+        display: block;
+    }
+    #footer{
+        margin-top: 0+50px;
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
 }

@@ -3,13 +3,6 @@
     margin-bottom: 100px;
 }
 
-@mixin list {
-    list-style-type: none;
-    li{
-        font-size: 20px;
-        padding-left: 6px;
-    }
-}
 
 @mixin marker($color) {
     border-radius: 10px;

@@ -1,0 +1,18 @@
+@import "./mixins/mixins.scss";
+
+#container{
+    margin-left: 15%;
+    width: 70%;
+}
+
+.tittle{
+    @include tittleBlock;
+}
+
+@media(max-width:600px){
+    .tittle{
+        margin-top: 0+50px;
+        margin-bottom: 0+50px;
+        text-align: left;
+    }
+}

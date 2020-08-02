@@ -1,27 +1,43 @@
 @import "./mixins/mixins.scss";
 
-.tittle{
+.tittle {
     @include tittleBlock;
 }
 
-#container{
+#container {
     margin-left: 25%;
     width: 50%;
 }
-li{
-    list-style-type: none;
-    width: 100%;
-    margin-left: 0;
-}
-.left{
+.left {
     text-align: left;
 }
-.markersPurple{
-    display: flex;
+.right {
+    text-align: right;
+}
+.markersPurple {
     @include marker(#b59aff);
 }
-.markersBlue{
-    display: flex;
+.markersBlue {
     @include marker(#9aa9ff);
 }
-
+.raw {
+    display: grid;
+    width: 60%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+@media (max-width: 600px) {
+    #container {
+        width: 50%;
+        font-size: 1.2em;
+    }
+    .raw {
+        width: 100%;
+    }
+    .tittle {
+        margin-top: 0+50px;
+        margin-left: -20%;
+        margin-bottom: 0+50px;
+        text-align: left;
+    }
+}

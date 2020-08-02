@@ -8,17 +8,17 @@ let Pricing = () => {
             <div className={classes.tittle}>
                 <h1>Ціни</h1>
             </div>
-            <div>
-                <ul>
-                    <ul className={classes.markersPurple}>
-                        <li className={classes.left}>1 година</li>
-                        <li>400 грн</li>
-                    </ul>
-                    <ul className={classes.markersBlue}>
-                        <li  className={classes.left}>3 години</li>
-                        <li>1000 грн</li>
-                    </ul>
-                </ul>
+            <div className={classes.raw}>
+                <div className={classes.markersPurple}>
+                    <div className={classes.left}>1 година</div>
+                    <div className={classes.right}>400 грн</div>
+                </div>
+            </div>
+            <div className={classes.raw}>
+                <div className={classes.markersBlue}>
+                    <div className={classes.left}>3 години</div>
+                    <div className={classes.right}>1000 грн</div>
+                </div>
             </div>
         </div>
     );
